@@ -10,6 +10,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <link rel="manifest" href="https://augustineiacopelli.github.io/appaday/manifests/123.webmanifest">
 <script src="https://augustineiacopelli.github.io/appaday/save.js" defer></script>
+<script src="https://augustineiacopelli.github.io/appaday/models.js"></script>
 <script src="https://augustineiacopelli.github.io/appaday/keys.js" data-app="123" data-legacy-key="appaday123-apikey" data-accent="#C8401A" defer></script>
 <title>Two-Minute Rule Task Splitter | AppADay 123</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -444,7 +445,7 @@
 (function(){
   'use strict';
 
-  const CLAUDE_MODEL = 'claude-sonnet-5';
+  const CLAUDE_MODEL = (window.AppModels ? window.AppModels.id('sonnet') : '');
   const STORAGE_KEY = 'appaday123-state';
   const SESSION_STORAGE = 'appaday123-session';
 

@@ -16,7 +16,7 @@ A single self-contained `index.html` file. No build step, no framework, no depen
 
 The Claude API key and a session name live in the settings modal (gear icon) and are stored only in the browser's `localStorage`, never on the main screen. Requests go straight from the browser to the Anthropic API using the `anthropic-dangerous-direct-browser-access` header, with the key read fresh from storage on every call. The current task, any refinement instructions, and the full subtask checklist (including completion state) are also saved to `localStorage`, so a breakdown in progress survives a page reload.
 
-Model used: `claude-sonnet-5`.
+Model used: the current Claude Sonnet model.
 
 ## Try it
 
