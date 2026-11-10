@@ -669,7 +669,7 @@
       },
       body: JSON.stringify({
         model: CLAUDE_MODEL,
-        max_tokens: 1200,
+        max_tokens: 1200, thinking: (window.AppModels && window.AppModels.thinking ? window.AppModels.thinking(CLAUDE_MODEL) : undefined),
         messages: [{ role: 'user', content: buildPrompt() }]
       })
     })
